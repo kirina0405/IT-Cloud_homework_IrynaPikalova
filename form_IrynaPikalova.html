@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form (Iryna Pikalova)</title>
+	<meta charset='uft-8'>
+</head>
+<body>
+	<header>
+		<h1>Пожалуйста, оцените качество наших курсов</h1>
+	</header>
+	<main>
+		<form>
+			<ol>
+				<li>
+					<p><em>Выберите направление, на котором вы обучались:</em></p>
+					<ul>
+						<div>
+							<label>
+								<input type="radio" name="radio"/>Английский язык
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" name="radio"/>Французский язык
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" name="radio"/>Испанский язык
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" name="radio"/>Немецкий язык
+							</label>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<p><em>Оцените уровень преподавания по 5-тибальной шкале:</em></p>
+					<table>
+						<thead align="center">
+							<th></th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+						</thead>
+						<tbody>
+							<tr>							
+								<td>Доступность изложения теории</td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+							</tr>
+							<tr>							
+								<td>Корректность преподавателя</td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+							</tr>
+							<tr>							
+								<td>Пунктуальность преподавателя</td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+								<td><input name="radio" type="radio"/></td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+
+				<li>
+					<p><em>Какие навыки вы приобрели за год обучения:</em></p>
+					<ul>
+						<div>
+							<input id="number1" type="checkbox"/>
+							<label for="number1">Свободное чтение и писание</label>
+						</div>
+						<div>
+							<input id="number2" type="checkbox"/>
+							<label for="number2">Свободное понимание и говорение</label>
+						</div>
+						<div>
+							<input id="number3" type="checkbox"/>
+							<label for="number3">Другое
+								<input type="text" placeholder="write"/>
+							</label>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<p><em>Сколько часов в день вы тратите на выполнение домашних заданий:</em></p>
+						<input type="number" min="1" max="24" placeholder="24"/>
+				</li>
+				<li>
+					<p><em>Посоветуете ли вы эти курсы своим знакомым?</em></p>
+						<select>
+							<option selected="selected">Да</option>
+							<option>Нет</option>
+						</select>
+				</li>
+				<li>
+					<p><em>Оставьте ваш e-mail для связи</em></p>
+					<input type="email" required="required" placeholder="your e-mail"/>
+				</li>
+			</ol>
+			<button type="button">Submit</button>
+		</form>
+	</main>	
+	<footer></footer>
+</body>
+</html>
