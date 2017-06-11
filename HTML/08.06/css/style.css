@@ -1,0 +1,184 @@
+/* General style */
+body{
+	margin: 0;
+	background-color: #0ebfdd;
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+}
+p, h1, h2, h3 {
+	text-align: center;
+}
+p {
+	font-size: 14px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+} 
+a {
+	text-decoration: none;
+}
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* header */
+.fixed1 {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	padding-top: 20px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.logo {
+	display: inline;
+	float: left;
+	width: 50%;
+	text-align: left;
+	font-size: 30px;
+	color: #999999;
+	font-weight: bold;
+}
+.menu {
+	display: inline;
+	text-align: right;
+}
+.dropdown li { 
+	display: list-item;
+	float: left;
+	margin: 5px 25px 0 0;
+}
+.dropdown a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #999999;	
+}
+.dropdown li a:hover {
+	text-decoration: underline;
+}
+.botton a {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #999999;
+}
+.botton a:hover {
+	display: inline;
+	padding: 10px 30px;
+	border-radius: 25px;
+	background-color: #0ebfdd;
+	color: #ffffff;
+}
+/* mission */
+.mission {
+	background-image: url(img/mountains.png); 
+	height: 610px;
+}
+.mission_head {
+	padding-top: 400px;
+	font-size: 25px;
+	color: #ffffff;
+}
+.mission_text {
+	padding: 0 20px;
+	color: #ffffff;
+}
+/* about */
+.about {
+	height: 220px;
+	background-color: #ffffff;
+}
+.about_head {
+	padding-top: 40px;
+	font-size: 25px;
+	color: #0ebfdd;
+}
+.about_text {
+	padding: 0 20px;
+	color: #999999;
+}
+/* team */
+.team {
+	height: 510px;
+	padding-top: 20px;
+	text-align: center;
+}
+.team_head {
+	font-size: 25px;
+	color: #ffffff;
+}
+.team_photo {
+	display: inline-block;
+}
+ul.team_list li { 
+	display: list-item;
+	float: left;
+	margin: 0 40px;
+	font-size: 16px;
+	font-weight: thick;
+	color: #ffffff;
+}
+.photo {
+	padding: 30px 0 10px 0;
+}
+.name {
+	font-size: 16px;
+	font-weight: bold;
+}
+.photo > img {
+	width: 93%;
+}
+.position {
+	padding-top: 10px;
+	font-size: 14px;
+	font-style: italic;
+}
+.work {
+	width: 145px;
+	margin: 100px auto;
+	padding: 10px 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ffffff;
+}
+/* map */
+.map {
+	height: 440px;
+	background-color: #ffffff;
+}
+/* footer */
+.footer {
+	background-color: #45494d;
+	height: 120px;
+}
+ul.dropdownFooter li { 
+	display: list-item;
+	float: left;
+	margin: 5px 25px 0 0;
+	font-size: 14px;
+	font-weight: thick;
+	color: #999999;
+}
+.info {}
+.network {}
+.copyrighted {}
+
+
+
+
+
+
+
+
+
+
