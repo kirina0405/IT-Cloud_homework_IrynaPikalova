@@ -7,96 +7,78 @@
 	</head>
 	<body>
 <!--Menu-->
-		<header>
-			<div class="fixed1">
-				<div class="container">
-					<div class="logo">LOGO
-					</div>
-					<div>
-						<div class="menu">
-							<ul class="dropdown">
-								<li>
-									<a href="#">ABOUT US</a>
-								</li>
-								<li>
-									<a href="#">OUR TEAM</a>
-								</li>
-								<li>
-									<a href="#">CONTACT US</a>
-								</li>
-							</ul>
-						</div>
-						<div class="botton">
-							<a href="#">SING IN</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<header class="fix">
+			<nav class="container">
+				<ul class="dropdown">
+					<li class="logo">
+					LOGO
+					</li>
+					<li class="menu">
+						<ul>
+							<li>
+								<a href="#">ABOUT US</a>
+							</li>
+							<li>
+								<a href="#">OUR TEAM</a>
+							</li>
+							<li>
+								<a href="#">CONTACT US</a>
+							</li>
+							<li class="botton">
+								<a href="#">SING IN</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 		</header>
 <!--Menu/-->
 		<main>
 <!--Section Mission-->
-			<section class="mission" style="background-image: url(img/mountains.png);">
+			<section class="mission">
 				<div class="container">
-					<div class="mission_head">
-						<h1>Our Mission</h1>
-					</div>
-					<div class="mission_text">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-					</div>
+					<h1> * Our Mission * </h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+					</p>
 				</div>
 			</section>
 <!--Section About-->		
 			<section class="about">
 				<div class="container">
-					<div class="about_head">
-						<h1>About</h1>
-					</div>
-					<div class="about_text">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
-					</div>
+					<h1>About</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
 				</div>
 			</section>
 <!--Section Team-->		
 			<section class="team">
 				<div class="container">
-					<div class="team_head">
-						<h1>Team</h1>
-					</div>
-					<div class="team_photo">
-						<ul class="team_list">
-							<li>
-								<div class="photo">
-									<img src="img/John1.png" alt="John1">
-								</div> 
-								<div class="name">John Doe</div>
-								<div class="position">Founder and CEO</div>
-							</li>
-							<li>
-								<div class="photo">
-									<img src="img/John2.png" alt="John2">
-								</div>	
-								<div class="name">John Doe</div>
-								<div class="position">Co-founderO</div>	
-							</li>
-							<li>
-								<div class="photo">
-									<img src="img/John3.png" alt="John3">
-								</div>
-								<div class="name">John Doe</div>
-								<div class="position">Investor</div>
-							</li>
-						</ul>
-					</div>
-					<div class="work">
+					<h1>Team</h1>
+					<ul class="team_list">
+						<li>
+							<img src="img/John1.png" alt="John1">
+							<h2>John Doe</h2>
+							<span>Founder and CEO</span>
+						</li>
+						<li>
+							<img src="img/John2.png" alt="John2">
+							<h2>John Doe</h2>
+							<span>Co-founderO</span>	
+						</li>
+						<li>
+							<img src="img/John3.png" alt="John3">
+							<h2>John Doe</h2>
+							<span>Investor</span>
+						</li>
+					</ul>
+					<button class="work">
 						WORK WITH US
-					</div>
+					</button>
 				</div>
 			</section>
 <!--Section Map-->		
 			<section>
 				<div class="map">
-					<img src="" alt="Map">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:px;'><div id='gmap_canvas' style='height:500px;width:px;'></div><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">scrapebox proxies</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(50.028617,36.22724500000004),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.028617,36.22724500000004)});infowindow = new google.maps.InfoWindow({content:'<strong>Адрес</strong><br>вулиця Отакара Яроша, 33, Харків, Харківська область<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 				</div>
 			</section>
 		</main>
@@ -105,23 +87,36 @@
 			<div class="container">
 				<div class="info">
 					<ul class="dropdownFooter">
-						<li>ABOUT</li>
-						<li>FAQ</li>
-						<li>WORK WITH US</li>
+						<li>
+						<a href="#">ABOUT</a></li>
+						<li>
+						<a href="#">FAQ</a>
+						</li>
+						<li>
+						<a href="#">WORK WITH US</a>
+						</li>
+					</ul>
+					<ul class="network">
+						<li>
+							<button class="site"><a href="mailto:kirina0405@gmail.com"><img src="img/Envelope.png"></a>
+							</button>
+						</li>
+						<li>
+							<button class="site"><a href="https://twitter.com" title="Twitter" target="_blank">
+								<img src="img/twitter.png">
+							</a>
+							</button>
+						</li>						<li>
+							<button class="site"><a href="https://facebook.com" title="Facebook" target="_blank"><img src="img/facebook.png"></a>
+							</button>
+						</li>					</ul>
 					</ul>
 				</div>
-				<div class="network">
-					<ul>
-						<li>mail</li>
-						<li>facebook</li>
-						<li>Twitter</li>
-					</ul>
+				<div class="copyrighted">
+					<span id="Policy">Privacy Policy</span>
+					<span id="Terms">Terms and Conditions</span>
+					<span>&#169 Company.LLC 2014</span>
 				</div>
-			</div>
-			<div class="copyrighted">
-				<span>Privacy Pulicy</span>
-				<span>Terms and Conditions</span>
-				<span>© Company.LLC 2014</span>
 			</div>
 		</footer>
 	</body>
