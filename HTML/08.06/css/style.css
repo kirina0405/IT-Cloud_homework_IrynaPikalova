@@ -42,6 +42,7 @@ a {
 /* header */
 .fix {
 	position: fixed;
+	z-index: 1;
 	width: 100%;
 	height: 80px;
 	background-color: #ffffff;
@@ -49,7 +50,7 @@ a {
 .dropdown {
 	position: relative;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 16px;
 }
 .dropdown li, 
 .menu li {
@@ -65,7 +66,7 @@ a {
 .menu {
 	position: absolute;
 	right: 5px;
-	padding-top: 10px;
+	padding-top: 13px;
 }
 .menu li {
 	margin-left: 15px;
@@ -92,25 +93,27 @@ a {
 .mission {
 	background-image: url(../img/mountains.png);
 	background-size: cover; 
-	height: 680px;
+	background-position: center; 
+	min-height: 680px;
 }
 .mission .container {
-	position: relative;
-	top: 60%;
+	padding-top: 400px;
 }
 .mission h1 {
-	position: absolute;
-	left: 35%;
 	color: #ffffff;
 }
 .mission p {
-	position: absolute;
 	margin: 70px 40px;
 	color: #ffffff;
 }
+.mission h1 i {
+	font-size: 12px;
+	vertical-align: 7px;
+	margin: 0 10px;
+}
 /* about */
 .about {
-	height: 250px;
+	min-height: 250px;
 }
 .about h1 {
 	padding-top: 60px;
@@ -123,7 +126,7 @@ a {
 /* team */
 .team {
 	background-color: #0ebfdd;
-	height: 600px;
+	min-height: 600px;
 	color: #ffffff;
 }
 .team h1 {
@@ -161,13 +164,14 @@ a {
 }
 /* footer */
 .footer {
+	position: relative;  
 	background-color: #45494d;
-	height: 140px;
+	min-height: 140px;
 }
 .info {
 	position: relative;
 	width: 100%;
-	height: 70px;
+	min-height: 70px;
 	padding: 15px 0 15px 0;
 }
 .dropdownFooter	{
@@ -184,6 +188,9 @@ a {
 	font-size: 18px;
 	color: #ffffff;
 }
+.dropdownFooter a:hover {
+	text-decoration: underline;
+}
 .network {
 	position: absolute;
 	width: 220px;
@@ -191,7 +198,7 @@ a {
 }
 .site {
 	width: 45px;
-	height: 45px;
+	min-height: 45px;
 	margin: 0 3px 0 0;
 	border: 1px solid #ffffff;
 	border-radius: 30px;
@@ -199,23 +206,22 @@ a {
 	cursor: pointer;
 }
 .copyrighted {
+	position: relative;
 	border-top: 1px solid #82868f;
-	text-align: right;
-	padding: 7px 60px 0 0;
-	font-size: 20px;
+	min-height: 42px;
+	font-size: 18px;
 	color: #82868f;	
 }
-#Policy, #Terms {
-	border-right: 2px solid #82868f;
-	padding: 0 10px;
+.copyrighted ul {
+	position: absolute;
+	right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
+.copyrighted li {
+	display: inline-block;
+	margin-top: 10px;
+	line-height: 12px;
+	padding: 0 11px;
+}
+#Policy, #Terms {
+	border-right: 1px solid #82868f;
+}
