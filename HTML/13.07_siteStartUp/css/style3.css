@@ -89,6 +89,10 @@ header h4 {
 	font-size: 20px;
 	color: #fff;
 	font-weight: normal;
+	margin-bottom: 50px;	
+}
+header .container {
+	height: 100%;
 }
 /*Nav*/
 .dropdown a {
@@ -157,22 +161,14 @@ header h4 {
 	padding: 0 5px;
 }
 
-#icon1 {
-	background-color: #c0301c;
-	border-width: 2px solid transparent;
-}
-#icon1 p {	
-	font-family: 'Times_Roman';
-	font-size: 60px;
-	color: #fff;
-	opacity: 1;
-}
-#icon2 p {
-	font-family: 'MontserratRegular';
+.services_list div {
+	border-width: 2px solid #f9f8f7;	
 	font-size: 50px;
 	color: #c0301c;
-	letter-spacing: 3px;
-	opacity: 1;
+}
+.services_list div:hover {
+	background-color: #c0301c;
+	color: #fff;
 }
 /*about_us*/
 .about_us {
@@ -265,7 +261,7 @@ header h4 {
 .latest_works_img div{
 	width: 360px;
 	height: 320px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .latest_works_a {
 	display: flex;
@@ -315,7 +311,6 @@ header h4 {
 	align-items: center;
 }
 .get_in_touch p{
-	margin-bottom: 40px;
 	font-size: 32px;
 	color: #fff;
 	font-weight: 300;
@@ -324,6 +319,9 @@ header h4 {
 .get_in_touch span{
 	text-transform: uppercase;
 }	
+.get_in_touch button {
+	margin-top: 40px;
+}
 /*recent_blog*/
 .recent_blog {
 	min-height: 980px;
@@ -528,14 +526,14 @@ input::-webkit-input-placeholder,
 .site1 li{
 	display: inline-flex;
 	flex-direction: row;
+	margin-bottom: 30px;
 }
 .site1 button{
 	width: 35px;
 	height: 35px;
 	border-radius: 36px;
 	border: 2px solid #fff;
-	margin: 0 5px 30px; 
-	
+	margin: 0 5px; 
 }
 .footer hr{
 	background-color: #fff;
