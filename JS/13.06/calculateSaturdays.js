@@ -1,6 +1,6 @@
 function calculateSaturdays(a, b) {
   
-  var quantitySaturdays = 1;
+  var quantitySaturdays = 0;
   
   while ( a <= b ) {
 	
@@ -12,11 +12,11 @@ function calculateSaturdays(a, b) {
 		
 		var quantitySaturdays = quantitySaturdays + 1;
 		
-		var a = a + 1;
+		a++;
 	
 	} else {
 	    
-	    var a = a + 1;
+	    a++;
 	}
  	
  	} 
