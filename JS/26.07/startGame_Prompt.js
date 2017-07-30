@@ -1,5 +1,4 @@
-  
-function startGame(constanta) {
+ function startGame(constanta) {
 		
 	var steps = 0;
 
