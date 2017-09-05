@@ -1,0 +1,220 @@
+/* General style */
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+
+.background {
+    background: top url(../img/Untitled-1.jpg);
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+p {
+    font-family: 'OpenSansLight';
+    color: #424242;
+    font-size: 13px;
+}
+
+h2,
+h3 {
+    font-family: 'OpenSansBold';
+    text-transform: uppercase;
+    color: #323232;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-family: 'OpenSansSemiBold';
+    color: #e40000;
+}
+
+span {
+    color: #e40000;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* header */
+
+header section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.call {
+    font-family: 'OpenSansBold';
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.www {
+    margin-top: -3px;
+    font-weight: 700;
+}
+
+#trapezoid {
+    position: relative;
+    border-top: 80px solid #e40000;
+    border-right: 60px solid transparent;
+    height: 0;
+    min-width: 280px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 26px;
+}
+
+
+/* main */
+
+.business-people_photo {
+    margin: -20px 0;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #323232;
+    min-height: 180px;
+    margin-bottom: 30px;
+}
+
+.about_us h3,
+.about_us p {
+    color: white;
+    text-align: center;
+}
+
+
+/* lorem */
+
+.lorem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.lorem_aside,
+.lorem_aside_right {
+    width: 45%;
+}
+
+.lorem_ul {
+    max-width: 400px;
+}
+
+li {
+    list-style: none;
+}
+
+.lorem_ul_li {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 0 0;
+}
+
+i,
+.check div {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e40000;
+    color: white;
+    margin-right: 20px;
+}
+
+.cogs i,
+.check div,
+.signal i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.check i {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #323232;
+    font-size: 14px;
+    margin: 0;
+}
+
+.check div {
+    background-color: #323232;
+}
+
+@media screen and (max-width: 585px) {
+    .business-people_photo {
+        margin: 5px 0 -5px 0;
+    }
+    .call {
+        margin-top: 10px;
+    }
+    .lorem_aside,
+    .lorem_aside_right {
+        min-width: 300px;
+        margin: 0 30px 10px 30px;
+    }
+    .info {
+        margin-left: 30px;
+    }
+}
