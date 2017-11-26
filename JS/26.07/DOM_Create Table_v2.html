@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Creation table 3x3</title>
+	  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #ddd;
+      padding: 3px;
+      text-align: center;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+	</head>
+<body>
+
+  <div id="tableAxB"></div>
+
+  <script>
+function createTable(id, rows, columns) {
+
+      var table = document.createElement('table');  
+      document.getElementById(id).appendChild(table);
+
+      var thead = document.createElement('thead');
+      table.insertBefore(thead, table.children[0]);
+
+      var tr = document.createElement('tr');
+      thead.insertBefore(tr, thead.children[0]);
+
+      for (var j = 0; j < columns; j++) {
+        var th = document.createElement('th'); 
+        tr.insertBefore(th, tr.children[j]);
+        th.innerHTML = 'column ' + (j + 1);
+      }
+
+      var tbody = document.createElement('tbody');
+      table.insertBefore(tbody, table.children[1]); 
+
+      for (var i = 1; i < rows + 1; i++) {
+        var tr = document.createElement('tr');
+        tbody.insertBefore(tr, tbody.children[i]);
+      
+        if (i % 2 == 0) {
+          tr.style.backgroundColor = '#f6f8fa';
+        }      
+
+        for (var j = 0; j < columns; j++) {
+          var td = document.createElement('td'); 
+          tr.insertBefore(td, tr.children[j]);
+          td.innerHTML = i + "." + (j + 1);
+        }
+      } 
+}
+createTable("tableAxB", 3, 3);
+  </script>
+
+</body>
+</html>
