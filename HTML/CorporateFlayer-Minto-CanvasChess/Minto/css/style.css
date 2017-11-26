@@ -1,0 +1,282 @@
+    /* General style */
+    
+    @font-face {
+        font-family: 'AmaranthRegular';
+        src: url('../fonts/Amaranth-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'EncodeSansSemiCondensedRegular';
+        src: url('../fonts/EncodeSansSemiCondensed-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'pfsquaresanspro-regular';
+        src: url('../fonts/pfsquaresanspro-regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'SegoeUIRegular';
+        src: url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'SegoeUIBold';
+        src: url('../fonts/SegoeUIBold/SegoeUIBold.ttf');
+    }
+    
+    @font-face {
+        font-family: 'SegoeUIItalic';
+        src: url('../fonts/SegoeUIItalic/SegoeUIItalic.ttf');
+    }
+    
+    @font-face {
+        font-family: 'StRyde-Regular';
+        src: url('../fonts/StRyde-Regular.otf');
+    }
+    
+    .background {
+        background: top url(../img/Untitled-2.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container,
+    .container-fluid,
+    main,
+    sliderShow {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1016px;
+    }
+    
+    .glyphicon,
+    .fa {
+        font-size: 19px;
+        color: #82699d;
+        margin-right: 8px;
+    }
+    
+    p,
+    a {
+        font: 15px 'SegoeUIRegular';
+        color: #494848;
+        margin: 0;
+        line-height: 2em;
+    }
+    
+    a,
+    a:hover {
+        text-decoration: none;
+        font-size: 19px;
+    }
+    /* header */
+    
+    header {
+        border-top: 8px solid #82699d;
+    }
+    
+    .col-sm-2 {
+        min-width: 125px;
+    }
+    
+    .logo,
+    .menu,
+    .copyright,
+    .social {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 130px;
+    }
+    
+    .logo {
+        justify-content: flex-start;
+    }
+    
+    .logo span {
+        font: 30px 'AmaranthRegular';
+        color: white;
+        box-shadow: 1px;
+        margin: -5px 0 0 -48px;
+    }
+    
+    .logo p {
+        font: 39px 'pfsquaresanspro-regular';
+        margin: -5px 0 0 35px;
+        color: #82699d;
+    }
+    /* main */
+    
+    .carousel-control {
+        top: 45%;
+        max-width: 34px;
+        max-height: 65px;
+        opacity: 1;
+    }
+    
+    .carousel-caption {
+        top: 205;
+        text-shadow: -2px 3px 3px rgba(0, 0, 0, .6);
+        bottom: 120px;
+    }
+    
+    .carousel-caption h2 {
+        font: 117px 'StRyde-Regular';
+    }
+    
+    .carousel-caption h3 {
+        font: 31px 'pfsquaresanspro-regular';
+        margin: 0;
+        padding: 0;
+    }
+    
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+        background-color: #82699d;
+    }
+    
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+        color: #fff;
+    }
+    
+    .quote {
+        margin: 40px 0;
+        padding: 10px 0;
+        border-top: 1px solid #bfbfbf;
+        border-bottom: 1px solid #bfbfbf;
+    }
+    
+    .quote p {
+        font-size: 23px;
+        line-height: 1.5em;
+        font-family: 'SegoeUIItalic';
+        text-align: center;
+    }
+    
+    .quote span {
+        color: #87699d;
+        font-family: 'SegoeUIItalic';
+        font-weight: bold;
+    }
+    
+    img[alt="circle"] {
+        width: 100%;
+    }
+    
+    .content h2 {
+        font-family: 'SegoeUIBold';
+    }
+    
+    .text {
+        position: relative
+    }
+    
+    .read {
+        position: absolute;
+        right: 0;
+    }
+    
+    .read a {
+        font-size: 15px;
+        font-family: 'SegoeUIItalic';
+        color: #82699d;
+    }
+    /* clients */
+    
+    .clients {
+        margin-top: 60px;
+    }
+    
+    .clients_featured {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 42px;
+    }
+    
+    .clients_featured p {
+        font-size: 22px;
+        line-height: 1.2em;
+    }
+    
+    .clients_featured img {
+        margin-left: 10px;
+        max-width: 68%;
+        height: 5px;
+        display: block;
+    }
+    
+    .clients_featured span {
+        font-family: 'SegoeUIBold';
+    }
+    
+    .clients_logo {
+        display: inline-flex;
+        flex-direction: row;
+        border-left: 1px solid #dedede;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .clients_logo img {
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+        width: 100%;
+    }
+    /* footer */
+    
+    footer {
+        height: 70px;
+        background-color: #dedede;
+        border-bottom: 8px solid #82699d;
+    }
+    
+    .copyright,
+    .social {
+        min-height: 70px;
+        margin-top: -5px;
+    }
+    
+    .copyright {
+        justify-content: flex-start;
+    }
+    
+    .social a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 150px;
+        background-color: #82699d;
+        margin-left: 20px;
+    }
+    
+    .social i {
+        color: #fff;
+        font-size: 18px;
+        margin-right: 0;
+    }
+    
+    @media screen and (max-width: 992px) {
+        .logo,
+        .menu {
+            min-height: 50px;
+            margin-top: 10px;
+        }
+        img[alt="circle"] {
+            width: 50%;
+        }
+        .carousel-caption {
+            bottom: 20px;
+        }
+    }

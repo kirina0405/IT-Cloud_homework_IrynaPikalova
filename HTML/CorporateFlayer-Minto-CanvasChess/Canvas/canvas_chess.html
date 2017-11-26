@@ -1,0 +1,55 @@
+<!DOCTYPE HTML5>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convas_Chess</title>
+    <style>
+        #ChessBoard {
+            border: 10px solid #000;
+            background-color: #000;
+        }
+        
+        * {
+            margin-top: 10px;
+            padding: 0;
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id='ChessBoard' width="850px" height="850px"></canvas>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById('ChessBoard');
+            var context = canvas.getContext('2d');
+
+            /*Chess board*/
+            context.beginPath();
+            context.lineWidth = 50;
+            context.strokeStyle = "#fff";
+            context.strokeRect(0, 0, 850, 850);
+
+            context.fill();
+            context.fillStyle = '#fff';
+            for (j = 0; j < 8; j++) {
+                for (i = 0; i < 4; i++) {
+                    if (j % 2 == 0) {
+                        context.fillRect(200 * i + 25, 100 * j + 25, 100, 100)
+                    } else {
+                        context.fillRect(200 * i + 125, 100 * (j - 1) + 125, 100, 100)
+                    };
+                };
+            }
+            context.lineWidth = 3;
+            context.strokeStyle = "#000";
+            context.strokeRect(25, 25, 800, 800);
+
+        }
+    </script>
+</body>
+
+</html>
